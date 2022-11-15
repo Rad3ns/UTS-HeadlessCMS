@@ -1,0 +1,120 @@
+.container .text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  margin-left: -200px;
+  margin-top: -29px;
+}
+.container .text-wrapper h2 {
+  margin: 0;
+  text-align: left;
+  color: #000;
+  font-family: arial;
+  font-size: 100px;
+}
+.container .text-wrapper button {
+  display: inline-block;
+  color: #fff;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: rgb(238, 140, 12);
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+.container .text-wrapper button:hover {
+  background-color: rgb(209, 125, 29);
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(221, 155, 12);
+    
+   }
+   .nav-links a {
+    color: rgb(255, 198, 74);
+   }
+   /* LOGO */
+   .logo {
+    display: flex;
+   }
+   .logo img {
+    font-size: 10px;
+   }
+   .logo p {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    text-align: right;
+   }
+   .menu li:hover {
+    background-color: #f3eee9;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:rgb(190, 149, 35);
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#ffffff;
+  transition: 0.3s ease;
+  border : 1px solid rgb(255, 174, 0);
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ .dropdown {
+  left: 50%;
+  top: 30px;
+  transform: translateX(35%);
+ }
+ .dropdown li:hover {
+  background-color: #7a6504;
+ }
+ }  
